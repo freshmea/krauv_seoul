@@ -10,6 +10,19 @@ def main():
     else:
         print(" a is less than 0")
 
+    # and True True -> True
+    #     False True -> False
+    #     True  False -> False
+    #     False False -> Fasle
+
+    # or True True -> True
+    #     False True -> True
+    #     True  False -> True
+    #     False False -> Fasle
+    
+    # not True -> False
+    #     False -> True
+
     print('end of program')
 
 if __name__ == '__main__':
