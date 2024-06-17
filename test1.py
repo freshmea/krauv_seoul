@@ -1,0 +1,5 @@
+print("hello world, nano")
+print("hi second message")
+print(100)
+print()
+print('hi', 200, 'ros2')
