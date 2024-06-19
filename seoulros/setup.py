@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             "simplenode = seoulros.simplenode:main",
             "simpleclassnode = seoulros.simpleclassnode:main",
-            "simplepub = seoulros.simplepub:main"
-        ],
-    },
+            "simplepub = seoulros.simplepub:main",
+            "turtlepub = seoulros.turtlepub:main"
+        ]
+    }
 )
