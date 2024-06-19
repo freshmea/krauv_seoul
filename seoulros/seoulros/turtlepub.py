@@ -1,24 +1,24 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from geometry_msgs.msg import Twist
 
-class SimplePub(Node):
+class TurtlePub(Node):
     def __init__(self):
-        super().__init__('simplePub')
+        super().__init__('turtlePub')
         self.create_timer(1, self.printtest)
-        self.pub = self.create_publisher(String, "myMessage", 10)
+        self.pub = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
         self.i = 0
 
     def printtest(self):
-        msg = String()
-        msg.data = 'ros test '+ str(self.i)
+        msg = Twist()
+        msg.linear.x = 0.2
+        msg.angular.z = 1.0
         self.pub.publish(msg)
-
-        self.i += 1
 
 def main():
     rclpy.init()
-    node = SimplePub()
+    node = TurtlePub()
     rclpy.spin(node)
 
 
