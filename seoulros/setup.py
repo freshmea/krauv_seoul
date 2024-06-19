@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "simplenode = seoulros.simplenode:main"
+            "simplenode = seoulros.simplenode:main",
+            "simpleclassnode = seoulros.simpleclassnode:main"
         ],
     },
 )
