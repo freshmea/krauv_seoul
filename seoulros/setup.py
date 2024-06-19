@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "simplenode = seoulros.simplenode:main",
-            "simpleclassnode = seoulros.simpleclassnode:main"
+            "simpleclassnode = seoulros.simpleclassnode:main",
+            "simplepub = seoulros.simplepub:main"
         ],
     },
 )
